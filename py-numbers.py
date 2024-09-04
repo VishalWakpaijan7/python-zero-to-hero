@@ -116,3 +116,52 @@ The sequence can be a string, a range, a list, a tuple or any other kind of sequ
 # userName = 'vishal wakpaijan'
 # print(random.choice(userName))
 
+"""
+random.choices() : method returns a list with the randomly selected element from the specified sequence.
+
+You can weigh the possibility of each result with the weights parameter or the cum_weights parameter.
+
+The sequence can be a string, a range, a list, a tuple or any other kind of sequence.
+
+sequence |	Required. A sequence like a list, a tuple, a range of numbers etc.
+weights  |	Optional. A list were you can weigh the possibility for each value.Default None
+cum_weights | 	Optional. A list were you can weigh the possibility for each value, only this time the possibility is accumulated.
+                Example: normal weights list: [2, 1, 1] is the same as this cum_weights list; [2, 3, 4].
+                Default None
+k        |	Optional. An integer defining the length of the returned list
+"""
+
+# myList = ['apple', 'banana', 'cherry']
+# print(random.choices(myList, weights=[10,5,15], k=8)) # not understood yet
+
+"""
+random.shuffle(): method takes a sequence, like a list, and reorganize the order of the items.
+"""
+
+# myList = [1,2,3,4,5]
+# random.shuffle(myList) // return "None": this method change the original list, it does not return new list
+# print(myList)
+
+"""
+random.sample(): method return a list with specified numbers of randomly selected items from a sequence
+"""
+
+# myList = ['apple','banana','orange']
+# newList = random.sample(myList,k=2) # return a list with randomly selected items from myList to newList
+# print(newList) # k is cannot be longer than provided sequence length
+
+# OR
+
+# print(random.sample(myList,k=2))
+
+"""
+radom.random() : method return random floating number between 0 to 1
+"""
+
+# print(random.random())
+
+"""
+radom.uniform() : method return random floating number between two specified numbers (both included)
+"""
+
+# print(random.uniform(1.5,5.5))

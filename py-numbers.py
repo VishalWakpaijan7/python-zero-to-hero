@@ -165,3 +165,147 @@ radom.uniform() : method return random floating number between two specified num
 """
 
 # print(random.uniform(1.5,5.5))
+
+"""
+ ##### TRIANGULAR ####
+
+Syntax : random.triangular(low, high, mode)
+Parameters :
+low : the lower limit of the random number
+high : the upper limit of the random number
+mode : additional bias; low < mode < high
+if the parameters are (10, 100, 20) then due to the bias, most of the random numbers generated will be closer to 10 as opposed to 100.
+Returns : a random floating number
+
+"""
+
+# print(random.triangular(10,100,20))
+
+# for i in range(10):
+#     print(random.triangular(10,200,100))
+
+"""
+    random module methods used in "STATISTICS"
+"""
+
+"""
+### BETAVARIATE ###
+
+Syntax: random.betavariate() : Returns a random float number between 0 and 1 based on the Beta distribution (used in statistics)
+Beta distribution: 
+The beta distribution is used to model continuous random variables whose range is between 0 and 1.
+For example, in Bayesian analyses, the beta distribution is often used as a prior distribution of the parameter p 
+(which is bounded between 0 and 1) of the binomial distribution 
+(see, e.g., Novick and Jackson, 1974)
+"""
+
+# print(random.betavariate(1,10))
+
+"""
+#### EXPOVARIATE ####
+
+Syntax: random.expovariate() : Returns a random float number based on the Exponential distribution (used in statistics)
+Exponential distribution: 
+In Probability theory and statistics, the exponential distribution is a continuous probability distribution that often concerns the amount of time until some specific event happens.
+It is a process in which events happen continuously and independently at a constant average rate.
+
+"""
+
+# print(random.expovariate(10000.0))
+
+"""
+#### GAMMAVARIATE ###
+
+Syntax : random.gammavariate(alpha, beta)
+Parameters :
+alpha : greater than 0
+beta : greater than 0
+Returns : a random gamma distribution floating number based on Gamma distribution (used in statistics)
+"""
+
+# print(random.gammavariate(100,1))
+
+"""
+ ######### PROBABILITY THEORY #########
+"""
+
+"""
+### GAUSS ###
+
+Syntax : random.gauss(mu, sigma)
+Parameters :
+mu : mean
+sigma : standard deviation
+Returns : a random gaussian distribution floating number  based on the Gaussian distribution (used in probability theories)
+"""
+
+# print(random.gauss(100,50))
+
+"""
+### LOGNORMVARIATE ####
+
+Syntax : random.lognormvariate(mu, sigma)
+Parameters :
+mu : mean
+sigma : standard deviation, greater than 0
+Returns : a random log-normal distribution floating number based on a log-normal distribution (used in probability theories)
+
+"""
+# print(random.lognormvariate(0,0.25))
+
+"""
+### NORMALVARIATE ####
+
+Syntax : random.normalvariate(mu, sigma)
+Parameters :
+mu : mean
+sigma : standard deviation
+Returns : a random normal distribution floating number based on a  normal distribution (used in probability theories)
+
+"""
+
+# print(random.normalvariate(100,50))
+
+"""
+#### PARETOVARIATE #### 
+Syntax : random.paretovariate(alpha)
+Parameter :
+alpha : shape parameter
+Returns : a random Pareto distribution floating number
+"""
+
+# print(random.paretovariate(5))
+
+"""
+    ## DIRECTIONAL STATISTICS
+""" 
+
+"""
+### VONMISESVARIATE ####
+
+Syntax : random.vonmisesvariate(mu, kappa)
+Parameters :
+mu : mean angle, expressed in radians between 0 and 2*pi
+kappa : concentration parameter, greater than or equal to zero
+Returns :  a random float number based on the von Mises distribution (used in directional statistics)
+
+"""
+# print(random.vonmisesvariate(0,4))
+
+
+""" 
+ ### STATISTICS ###
+"""
+
+"""
+#### WEIBUllVARIATE ###
+
+Syntax : random.weibullvariate(alpha, beta)
+Parameters :
+alpha : scale parameter
+beta : shape parameter
+Returns : a random Weibull distribution floating number
+
+"""
+
+# print(random.weibullvariate(1,1.5))

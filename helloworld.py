@@ -1,12 +1,13 @@
-print('Hello, World!')
+print('\nHello, vishal let\'s learn python!\n')
 
 # Checking editor python version
 import sys
 print(sys.version)
 
+
 # Python indentation
-if 5 > 2:
-    print('Five is greater then two!')
+# if 5 > 2:
+#     print('Five is greater then two!')
 
 # Comments in python
 

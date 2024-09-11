@@ -237,3 +237,37 @@ The format() method returns the formatted string.
 # print('The temperature is between {:+} and {:+} degrees celsius. formatting {}'.format(-5,7,'indicate if the number is positive or negative'))
 # print('The temperature is between {:-} and {:-} degrees celsius. formatting {}'.format(-5,7,'indicate if the number is negative (positive numbers are displayed without any sign)'))
 # print('The temperature is between {: } and {: } degrees celsius.'.format(-8,10,'Use " " (a space) to insert a space before positive numbers and a minus sign before negative numbers'))
+
+""" index() : Searches the string for a specified value and returns the position of where it was found 
+    The index() method is almost the same as the find() method,
+    the only difference is that the find() method returns -1 if the value is not found.
+"""
+
+# print('Hey, I am superman'.index('am')) # return index of substring passed as argument
+
+""" isalnum() : The isalnum() method returns True if all the characters are alphanumeric,
+    meaning alphabet letter (a-z) and numbers (0-9).
+    Example of characters that are not alphanumeric: (space)!#%&? etc.
+"""
+
+# print('company123'.isalnum()) # True
+# print('company12 3#$#'.isalnum()) # False
+
+""" isalpha() : The isalpha() method returns True if all the characters are alphabet letters (a-z).
+    Example of characters that are not alphabet letters: (space)!#%&? etc. 
+"""
+
+# print('Hello'.isalpha())
+
+""" isdecimal() : The isdecimal() method returns True if all the characters are decimals (0-9).
+    This method can also be used on unicode objects. See example below.
+"""
+
+# print('1234.5'.isdecimal())
+
+""" isdigit() : The isdigit() method returns True if all the characters are digits, otherwise False.
+    Exponents, like ², are also considered to be a digit.
+"""
+
+# print('156456'.isdecimal()) # True
+# print('156456a'.isdecimal()) # False

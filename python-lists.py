@@ -154,3 +154,29 @@ fruitList = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 
 # fruitList.clear()
 # print(fruitList) # * return []
+
+
+# ? ################## Loop List ############
+
+# * Loop through a list : we can loop through the list by using for loop
+
+# for x in fruitList:
+#     print(x)
+
+# * Loop through index numbers : we can loop through list items by referring to their index number | use range() and len() function to create suitable iterable
+# print(range(len(fruitList))) # ? return range from (0,7) 
+
+# for i in range(len(fruitList)):
+#     print(fruitList[i])
+
+# * While loop : use len() function to determine the length of the list, then start at 0 and loop your way through the list 
+# * by referring to their indexes
+
+# i = 0
+# while i < len(fruitList):
+#     print(fruitList[i])
+#     i = i + 1
+
+# * Looping Using List Comprehension : list comprehension offer shortest syntax for looping through list
+
+# [print(x) for x in fruitList]

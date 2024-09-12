@@ -93,3 +93,30 @@ fruitList = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 """
 # fruitList.insert(2,'watermelon')
 # print(fruitList)
+
+# * ################## Add list items ############
+
+# * Append items : to add an item to the end of the list use append() method
+
+# fruitList.append('pear')
+# print(fruitList)
+
+# * Insert items : To insert a list item at a specified index, use the insert() method. : The insert() method inserts an item at the specified index
+
+# fruitList.insert(1,'pear')
+# print(fruitList)
+
+# * Extend list : To append elements for another list to the current list use extend() method.
+
+# tropical = ["pineapple", "papaya"]
+# fruitList.extend(tropical) # * The elements will be added to the end of the list
+# print(fruitList)
+
+# * The extend() method does not have to append lists, you can add any iterable object (tuples, sets, dictionaries etc.)
+
+# tropicalTuple = ('pineapple','papaya')
+
+# fruitList.extend(tropicalTuple)
+
+# print(fruitList)
+

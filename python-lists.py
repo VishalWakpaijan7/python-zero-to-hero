@@ -70,7 +70,7 @@ fruitList = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 # if 'apple' in fruitList:
 #     print("Yes, 'apple' is in the fruits list")
 
-# * ################## Change in list items ############
+# ? ################## Change in list items ############
 
 # * Change item value : To change the value of a specific item, refer to the index number
 
@@ -94,7 +94,7 @@ fruitList = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 # fruitList.insert(2,'watermelon')
 # print(fruitList)
 
-# * ################## Add list items ############
+# ? ################## Add list items ############
 
 # * Append items : to add an item to the end of the list use append() method
 
@@ -120,3 +120,37 @@ fruitList = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 
 # print(fruitList)
 
+# ? ################## Remove list items ############
+
+# * Remove method 
+# fruitList.remove('apple')
+# print(fruitList)
+
+# * If there are more than one item with the specified value, the remove() method removes the first occurrence
+
+# newFruits = ['apple', 'banana', 'orange', 'banana', 'pear']
+# newFruits.remove('banana')
+# print(newFruits)
+
+# * Removed at specified index : The pop() method help us to remove list item at specified index
+
+# fruitList.pop(2)  # Cherry removed at index 2
+# print(fruitList)
+
+# * If you do not specify the index, the pop() method removes the last item
+# fruitList.pop() # mango removed
+# print(fruitList) 
+
+# * del keyword also removes the specified index
+
+# del fruitList[2]
+# print(fruitList)
+
+# * del keyword also remove list completely
+# del fruitList
+# print(fruitList) # ! return NameError: name 'fruitList' is not defined
+
+# * Clear the list : the clear() method empties the list, The list still remains, but it has no content
+
+# fruitList.clear()
+# print(fruitList) # * return []

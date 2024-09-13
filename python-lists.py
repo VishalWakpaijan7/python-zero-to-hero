@@ -225,3 +225,59 @@ fruitList = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 
 # newList = [x if x != 'banana' else 'orange' for x in fruitList]
 # print(newList)
+
+# ? ################## Sort List ############
+
+# * List objects have a sort() method that will sort the list alphanumerically, ascending, by default
+
+# fruitList.sort()
+# print(fruitList)
+
+# * Sort the list numerically
+
+marksList = [ 23, 45, 75, 65, 10, 56 ]
+# marksList.sort()
+# print(marksList)
+
+# * Sort descending : To sort descending, use the keyword argument reverse = True:
+# fruitList.sort(reverse=True)
+# print(fruitList)
+
+# marksList.sort(reverse=True)
+# print(marksList)
+
+# * Customize sort function : You can also customize your own function by using the keyword argument key = function.
+# * The function will return a number that will be used to sort the list (the lowest number first)
+
+# def mySortFunc(n):
+#     return abs(n - 50)
+
+# marksList.sort(key=mySortFunc)
+
+# print(marksList)
+
+# * Case insensitive sort : 
+# * By default the sort() method is case sensitive, resulting in all capital letters being sorted before lower case letters
+
+# membersList = ['vishal', 'sachin', 'Nitin', 'pratik', 'sunil', 'amol']
+# membersList.sort()
+# print(membersList)
+
+# Luckily we can use built-in functions as key functions when sorting a list.
+# So if you want a case-insensitive sort function, use str.lower as a key function
+
+# membersList.sort(key= str.lower) # * Use str.lower when need of case-insensitive sort function
+# print(membersList)
+
+# * Reverse order :
+"""
+* What if you want to reverse the order of a list, regardless of the alphabet?
+* The reverse() method reverses the current sorting order of the elements
+"""
+
+# fruitList.reverse()
+# print(fruitList)
+
+# marksList.reverse()
+# print(marksList)
+

@@ -180,3 +180,48 @@ fruitList = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 # * Looping Using List Comprehension : list comprehension offer shortest syntax for looping through list
 
 # [print(x) for x in fruitList]
+
+
+# ? ################## List Comprehension ############
+# * List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
+
+# * requirement : give new list of fruit names letter containing 'a'
+
+# * With for loop
+# newList = []
+# for x in fruitList:
+#     if( 'a' in x ):
+#         newList.append(x)
+# print(newList)
+# * With list comprehension
+
+# newList = [x for x in fruitList if 'a' in x]
+# print(newList)
+
+# newList = [x for x in fruitList if x != 'apple'] # * list comprehension will work with not condition as well and return new list with existing list values.
+# print(newList)
+
+# * In list comprehension iterable can be any iterable like: list,tuple set, range etc
+
+# newList = [x for x in range(10)]
+# print(newList)
+
+# * same example with condition
+
+# newList = [x for x in range(10) if x <= 5]
+# print(newList)
+
+# * Expression : The expression is the current item in the iteration, but it is also the outcome, which you can manipulate before it ends up like a list item in the new list
+
+# newList = [x.upper() for x in fruitList]
+# print(newList)
+
+# * You can set outcome to whatever you like
+
+# newList = ['Hello' for x in range(5)]
+# print(newList)
+
+# * The expression can also contain conditions, not like a filter, but as a way to manipulate the outcome:
+
+# newList = [x if x != 'banana' else 'orange' for x in fruitList]
+# print(newList)
